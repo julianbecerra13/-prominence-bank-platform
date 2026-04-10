@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 60">
+  <rect width="200" height="60" fill="none"/>
+  <!-- Shield icon -->
+  <path d="M15 8 L30 3 L45 8 L45 28 C45 40 30 50 30 50 C30 50 15 40 15 28 Z" fill="#0A1F44" stroke="#C5A55A" stroke-width="1.5"/>
+  <path d="M25 20 L30 15 L35 20 L35 32 L25 32 Z" fill="#C5A55A"/>
+  <rect x="23" y="32" width="14" height="2" fill="#C5A55A"/>
+  <rect x="20" y="35" width="20" height="2" fill="#C5A55A"/>
+  <!-- Bank name -->
+  <text x="55" y="25" font-family="Inter, Arial, sans-serif" font-size="16" font-weight="700" fill="#0A1F44">PROMINENCE</text>
+  <text x="55" y="43" font-family="Inter, Arial, sans-serif" font-size="14" font-weight="400" fill="#0A1F44" letter-spacing="4">BANK</text>
+  <line x1="55" y1="47" x2="130" y2="47" stroke="#C5A55A" stroke-width="1"/>
+</svg>
