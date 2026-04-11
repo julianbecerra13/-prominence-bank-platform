@@ -107,14 +107,14 @@ export default function ClientDashboard() {
           <ResponsiveContainer width="100%" height={180}>
             <PieChart>
               <Pie data={pieData} cx="50%" cy="50%" innerRadius={50} outerRadius={75} paddingAngle={3} dataKey="value">
-                {pieData.map((_, i) => <Cell key={i} fill={CHART_COLORS[i % CHART_COLORS.length]} />)}
+                {pieData.map((d, i) => <Cell key={d.name} fill={CHART_COLORS[i % CHART_COLORS.length]} />)}
               </Pie>
               <Tooltip formatter={v => `$${v.toLocaleString()}`} />
             </PieChart>
           </ResponsiveContainer>
           <div className="flex flex-wrap gap-2 mt-2">
             {pieData.map((d, i) => (
-              <span key={i} className="flex items-center gap-1 text-[10px] text-gray-500">
+              <span key={d.name} className="flex items-center gap-1 text-[10px] text-gray-500">
                 <span className="w-2 h-2 rounded-full" style={{ background: CHART_COLORS[i % CHART_COLORS.length] }} />
                 {d.name}
               </span>

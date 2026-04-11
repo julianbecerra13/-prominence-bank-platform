@@ -101,14 +101,14 @@ export default function AdminDashboard() {
           <ResponsiveContainer width="100%" height={180}>
             <PieChart>
               <Pie data={accountTypes} cx="50%" cy="50%" innerRadius={45} outerRadius={70} paddingAngle={4} dataKey="value">
-                {accountTypes.map((_, i) => <Cell key={i} fill={COLORS[i % COLORS.length]} />)}
+                {accountTypes.map((d, i) => <Cell key={d.name} fill={COLORS[i % COLORS.length]} />)}
               </Pie>
               <Tooltip />
             </PieChart>
           </ResponsiveContainer>
           <div className="flex flex-wrap gap-2 mt-2">
             {accountTypes.map((d, i) => (
-              <span key={i} className="flex items-center gap-1 text-[10px] text-gray-500 capitalize">
+              <span key={d.name} className="flex items-center gap-1 text-[10px] text-gray-500 capitalize">
                 <span className="w-2 h-2 rounded-full" style={{ background: COLORS[i % COLORS.length] }} />
                 {d.name}
               </span>

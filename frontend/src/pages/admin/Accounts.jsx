@@ -82,7 +82,7 @@ export default function AdminAccounts() {
             <label className="label">Customer</label>
             <select className="input-field" value={form.customer_id} onChange={e => setForm({ ...form, customer_id: e.target.value })} required>
               <option value="">Select customer...</option>
-              {customers.map(c => <option key={c.id} value={c.id}>{c.customer_number} - {c.user?.first_name} {c.user?.last_name}</option>)}
+              {customers.map(c => <option key={c.id} value={c.id}>{c.customer_number} - {c.user?.first_name || ''} {c.user?.last_name || ''}</option>)}
             </select>
           </div>
           <div>
