@@ -27,7 +27,7 @@ export default function ClientLayout() {
   return (
     <div className="min-h-screen bg-gray-50/50">
       {/* Top bar */}
-      <header className="bg-gradient-to-r from-primary-600 via-primary-500 to-primary-600 text-white shadow-lg shadow-primary-900/10 relative overflow-hidden">
+      <header className="bg-gradient-to-r from-primary-600 via-primary-500 to-primary-600 text-white shadow-lg shadow-primary-900/10 relative z-50">
         {/* Subtle animated accent line */}
         <div className="absolute bottom-0 left-0 right-0 h-[2px] bg-gradient-to-r from-transparent via-accent-400/60 to-transparent" />
         <div className="max-w-7xl mx-auto px-6 py-3.5 flex items-center justify-between">
